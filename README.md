@@ -1,14 +1,12 @@
-# Ingeniería Web: Contenedores
-## Angular, Node.js, MongoDB, Docker
+# Docker
 
-Los contenedores son unidades de software que empaquetan código y todas sus dependencias. Estos permiten ejecutar imágenes, las cuales son paquetes de software independientes.
-Los contenedores son la evolución de las máquinas virtuales, y a diferencia de estas,se caracterizan por ser mucho más livianos.
-Los contenedores se usan para ejecutar aplicaciones de forma rápida y confiable en diferentes entornos informáticos; son importantes, además, porque ofrecen excelentes ventajas: son ligeros, son portables, permiten ser reusados, ofrecen un rápido despliegue y un uso eficiente de recursos.
+
+Los contenedores a diferencia de las máquinas virtuales, se caracterizan por ser mucho más livianos. Se usan para ejecutar aplicaciones de forma rápida y confiable en diferentes entornos y ofrecen ventajas como su portabilidad, facilitan el reuso, la integración y el despliegue de aplicaciones además de proporcionar un uso eficiente de recursos. En pocas palabras, los contenedores son unidades de software que empaquetan código y todas sus dependencias que permiten ejecutar paquetes de software independientes (imágenes).
 
 ## API Students
 La ruta de la API Students es `/student`
 
-El modelo para un registro de estudiante es el siguiente:
+BODY para registrar alumnos:
 {   
     name: {
         type: String
@@ -24,7 +22,7 @@ El modelo para un registro de estudiante es el siguiente:
     }
 }
 
-### Endpoints
+### Recursos
 
 ### GET
 
@@ -32,10 +30,10 @@ El modelo para un registro de estudiante es el siguiente:
 
 `/student/{id}` --> Entrega un registro específico de estudiante por id.
 
-`/student/delete/{id}` --> Se elimina un registro específico de estudiante por id.
+`/student/delete/{id}` --> Elimina un registro específico de estudiante por id.
 
 ### POST
 
-`/student/add` --> Se crea un nuevo registro de estudiante.
+`/student/add` --> Crea nuevo registro de estudiante.
 
-`/student/update/{id}` --> Se modifica un registro de estudiante por id.
+`/student/update/{id}` --> Modifica un registro de estudiante por id.
