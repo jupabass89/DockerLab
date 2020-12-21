@@ -12,15 +12,13 @@ import { CrudGetComponent } from './crud-get/crud-get.component';
 import { CrudEditComponent } from './crud-edit/crud-edit.component';
 
 import { BusinessService } from './business.service';
-import { TestComponentComponent } from './angular-testing/test-component/test-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CrudAddComponent,
     CrudGetComponent,
-    CrudEditComponent,
-    TestComponentComponent
+    CrudEditComponent
   ],
   imports: [
     BrowserModule,
